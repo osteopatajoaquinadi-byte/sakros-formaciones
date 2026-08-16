@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sakros Formaciones · Ciclo 2026 — Formaciones clínicas</title>
+<meta name="description" content="Tres formaciones clínicas para kinesiólogos y osteópatas: cefaleas persistentes, técnicas manuales en el deporte, dolor lumbar y diafragma. Sakros Formaciones · Viña del Mar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #131c33;
+  --navy-soft: #1e2a48;
+  --cream: #f3ede0;
+  --cream-warm: #ece3d1;
+  --gold: #d9b768;
+  --gold-deep: #b89548;
+  --ink: #14161f;
+  --muted: #6b6357;
+  --hairline: rgba(20, 22, 31, 0.14);
+  --hairline-strong: rgba(20, 22, 31, 0.22);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--cream);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* --- Preventa banner --- */
+.preventa-banner {
+  background: var(--navy);
+  color: var(--cream);
+  padding: 14px 24px;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 0.015em;
+  border-bottom: 1px solid var(--gold);
+}
+.preventa-banner strong {
+  color: var(--gold);
+  font-weight: 600;
+}
+.preventa-banner .dot {
+  color: var(--gold);
+  margin: 0 12px;
+}
+
+/* --- Nav --- */
+nav.top {
+  padding: 26px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid var(--hairline);
+}
+.brand {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.005em;
+  color: var(--ink);
+}
+.brand em {
+  font-style: italic;
+  color: var(--gold-deep);
+  font-weight: 500;
+}
+.nav-links {
+  display: flex;
+  gap: 36px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+}
+.nav-links a {
+  color: var(--ink);
+  text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+.nav-links a:hover { border-color: var(--gold); }
+
+/* --- Eyebrow (utility) --- */
+.eyebrow {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  color: var(--muted);
+  margin-bottom: 28px;
+  font-weight: 500;
+}
+.eyebrow .accent { color: var(--gold-deep); }
+
+/* --- Hero --- */
+.hero { padding: 100px 0 88px; border-bottom: 1px solid var(--hairline); }
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: clamp(38px, 6vw, 74px);
+  line-height: 1.04;
+  letter-spacing: -0.018em;
+  margin-bottom: 44px;
+  max-width: 20ch;
+  color: var(--ink);
+}
+.hero h1 em {
+  font-style: italic;
+  color: var(--gold-deep);
+  font-weight: 500;
+}
+.hero .lede {
+  font-size: 21px;
+  line-height: 1.55;
+  color: var(--ink);
+  max-width: 60ch;
+  margin-bottom: 52px;
+}
+.meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--muted);
+}
+.meta-row .item::before {
+  content: "◆";
+  color: var(--gold);
+  margin-right: 12px;
+  font-size: 9px;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+}
+
+/* --- Instructor --- */
+.instructor { padding: 88px 0; border-bottom: 1px solid var(--hairline); }
+.instructor-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 80px;
+  align-items: start;
+}
+.instructor-label h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.1;
+  color: var(--ink);
+}
+.instructor-label h2 em { font-style: italic; color: var(--gold-deep); }
+.instructor-body .name {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 26px;
+  color: var(--ink);
+  margin-bottom: 10px;
+}
+.instructor-body p {
+  font-size: 19px;
+  line-height: 1.65;
+  margin-bottom: 22px;
+  color: var(--ink);
+}
+.credentials {
+  margin-top: 44px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 40px;
+  padding-top: 32px;
+  border-top: 1px solid var(--hairline);
+  list-style: none;
+}
+.credentials li {
+  font-size: 16px;
+  color: var(--ink);
+  padding-left: 22px;
+  position: relative;
+  line-height: 1.5;
+}
+.credentials li::before {
+  content: "—";
+  color: var(--gold-deep);
+  position: absolute;
+  left: 0;
+  font-weight: 600;
+}
+.instructor-divider {
+  margin: 56px 0 44px;
+  height: 1px;
+  background: var(--hairline-strong);
+  position: relative;
+}
+.instructor-divider::before {
+  content: "◆";
+  position: absolute;
+  left: 50%;
+  top: -8px;
+  transform: translateX(-50%);
+  background: var(--cream);
+  padding: 0 12px;
+  color: var(--gold);
+  font-size: 10px;
+}
+
+/* --- Cursos --- */
+.cursos { padding: 104px 0 88px; }
+.cursos-header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 80px;
+  margin-bottom: 72px;
+}
+.cursos-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 1.1;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+.cursos-header .intro {
+  font-size: 19px;
+  line-height: 1.65;
+  color: var(--ink);
+}
+
+.curso {
+  display: grid;
+  grid-template-columns: 90px 1fr 2fr;
+  gap: 48px;
+  padding: 60px 0;
+  border-top: 1px solid var(--hairline-strong);
+}
+.curso:last-child { border-bottom: 1px solid var(--hairline-strong); }
+
+.curso-numeral {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 1;
+  color: var(--gold-deep);
+  letter-spacing: -0.02em;
+}
+
+.curso-meta .tag {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--muted);
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+.curso-meta dl { font-size: 15px; line-height: 1.5; }
+.curso-meta dt {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 10.5px;
+  color: var(--muted);
+  margin-top: 18px;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+.curso-meta dt:first-of-type { margin-top: 0; }
+.curso-meta dd { color: var(--ink); font-size: 15.5px; }
+
+.curso-body h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: var(--ink);
+  letter-spacing: -0.005em;
+}
+.curso-body p {
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--ink);
+}
+.contenidos {
+  margin-top: 28px;
+  padding-top: 26px;
+  border-top: 1px dashed var(--hairline-strong);
+}
+.contenidos-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  color: var(--muted);
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+.contenidos ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 28px;
+}
+.contenidos li {
+  font-size: 15.5px;
+  color: var(--ink);
+  padding-left: 18px;
+  position: relative;
+  line-height: 1.5;
+}
+.contenidos li::before {
+  content: "·";
+  color: var(--gold-deep);
+  font-weight: 700;
+  position: absolute;
+  left: 4px;
+  font-size: 22px;
+  line-height: 0.8;
+  top: 6px;
+}
+
+/* --- Sakros brand statement --- */
+.sakros-brand {
+  background: var(--navy);
+  color: var(--cream);
+  padding: 104px 0;
+  position: relative;
+}
+.sakros-brand .container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 80px;
+  align-items: start;
+}
+.sakros-brand .eyebrow { color: rgba(243, 237, 224, 0.55); }
+.sakros-brand .eyebrow .accent { color: var(--gold); }
+.sakros-brand h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.15;
+  color: var(--cream);
+  letter-spacing: -0.01em;
+}
+.sakros-brand h2 em { font-style: italic; color: var(--gold); }
+.sakros-brand .brand-body p {
+  font-size: 19px;
+  line-height: 1.7;
+  color: rgba(243, 237, 224, 0.9);
+  margin-bottom: 22px;
+}
+.sakros-brand .principios {
+  margin-top: 36px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(243, 237, 224, 0.15);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+}
+.principios .principio-num {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 26px;
+  color: var(--gold);
+  margin-bottom: 6px;
+}
+.principios .principio-text {
+  font-size: 15.5px;
+  line-height: 1.5;
+  color: rgba(243, 237, 224, 0.85);
+}
+
+/* --- Inscripción CTA --- */
+.inscripcion {
+  padding: 104px 0;
+  text-align: center;
+  border-bottom: 1px solid var(--hairline);
+}
+.inscripcion .preventa-mark {
+  display: inline-block;
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  color: var(--gold-deep);
+  padding: 8px 18px;
+  border: 1px solid var(--gold);
+  margin-bottom: 36px;
+  font-weight: 500;
+}
+.inscripcion h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 1.1;
+  color: var(--ink);
+  margin-bottom: 28px;
+  max-width: 22ch;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: -0.015em;
+}
+.inscripcion h2 em { font-style: italic; color: var(--gold-deep); }
+.inscripcion .lede {
+  font-size: 19px;
+  color: var(--ink);
+  max-width: 54ch;
+  margin: 0 auto 44px;
+  line-height: 1.6;
+}
+.cta-primary {
+  display: inline-block;
+  background: var(--navy);
+  color: var(--cream);
+  padding: 20px 52px;
+  font-family: 'EB Garamond', serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease;
+  border: 1px solid var(--navy);
+  font-weight: 500;
+}
+.cta-primary:hover { background: var(--gold-deep); border-color: var(--gold-deep); }
+.cta-secondary {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 15px;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 4px;
+  transition: color 0.2s ease;
+}
+.cta-secondary:hover { color: var(--gold-deep); }
+
+/* --- Footer --- */
+footer { padding: 52px 0 44px; background: var(--cream-warm); }
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.foot-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: var(--ink);
+}
+.foot-brand em { color: var(--gold-deep); font-style: italic; }
+.foot-meta {
+  font-size: 13px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+  .container { padding: 0 22px; }
+  .hero { padding: 64px 0 56px; }
+  .instructor { padding: 60px 0; }
+  .cursos { padding: 72px 0 60px; }
+  .sakros-brand { padding: 72px 0; }
+  .inscripcion { padding: 72px 0; }
+
+  .instructor-grid,
+  .cursos-header,
+  .sakros-brand .container {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .credentials { grid-template-columns: 1fr; }
+  .curso {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 48px 0;
+  }
+  .curso-numeral { font-size: 46px; }
+  .contenidos ul { grid-template-columns: 1fr; }
+  .sakros-brand .principios { grid-template-columns: 1fr; gap: 24px; }
+
+  .nav-links { display: none; }
+  .preventa-banner { font-size: 13.5px; padding: 12px 16px; line-height: 1.4; }
+  .preventa-banner .dot { display: inline-block; margin: 0 8px; }
+
+  .hero h1 { font-size: 40px; }
+  .inscripcion h2, .cursos-header h2, .sakros-brand h2, .instructor-label h2 { font-size: 30px; }
+  .curso-body h3 { font-size: 24px; }
+  .cta-secondary { display: block; margin: 20px 0 0; }
+  .cta-primary { padding: 18px 36px; letter-spacing: 0.2em; font-size: 14px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; scroll-behavior: auto !important; }
+}
+
+*:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+</style>
+</head>
+<body>
+
+<!-- ==================== NAV ==================== -->
+<nav class="top">
+  <div class="container" style="display:flex;justify-content:space-between;align-items:baseline;width:100%;padding-left:40px;padding-right:40px;">
+    <div class="brand">Sakros <em>Formaciones</em></div>
+    <div class="nav-links">
+      <a href="#instructor">Instructor</a>
+      <a href="#cursos">Cursos</a>
+      <a href="#inscripcion">Inscripción</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ==================== HERO ==================== -->
+<section class="hero">
+  <div class="container">
+    <div class="eyebrow">Sakros Formaciones <span class="accent">·</span> Ciclo 2026</div>
+    <h1>Formación clínica para kinesiólogos y <em>osteópatas.</em></h1>
+    <p class="lede">Cinco formaciones clínicas para kinesiólogos, osteópatas y posturólogos que trabajan con dolor persistente, desarrollo neuromotor, sistema autónomo y decisiones bajo incertidumbre. Evidencia estratificada, razonamiento antes que protocolo.</p>
+    <div class="meta-row">
+      <div class="item">Formato presencial</div>
+      <div class="item">Cupos limitados</div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== INSTRUCTOR + CREDENCIALES ==================== -->
+<section class="instructor" id="instructor">
+  <div class="container">
+    <div class="instructor-grid">
+      <div class="instructor-label">
+        <div class="eyebrow">Los <span class="accent">instructores</span></div>
+        <h2>Quienes <em>dictan</em> los cursos.</h2>
+      </div>
+      <div class="instructor-body">
+        <div class="name">Joaquín Adi</div>
+        <p>Kinesiólogo, osteópata D.O. y Magíster en Psiconeuroinmunología. Director de Clínica Sakros en Viña del Mar y docente internacional en la Escuela de Osteopatía de Madrid (EOM Internacional).</p>
+        <p>Su trabajo clínico y docente se organiza sobre un principio simple: estratificar lo que sabemos, lo que razonamos y lo que aún se debate — y elegir cada intervención desde ahí.</p>
+        <ul class="credentials">
+          <li>Kinesiólogo</li>
+          <li>Diploma en Osteopatía (D.O.)</li>
+          <li>MSc en Psiconeuroinmunología</li>
+          <li>Docente internacional EOM Internacional (Madrid)</li>
+          <li>Director clínico, Clínica Sakros (Viña del Mar)</li>
+          <li>Co-investigador RCT diafragma + HRV en fibromialgia</li>
+          <li>Docencia en HRV, dolor nociplástico y control motor</li>
+          <li>Especialización en preparación física en patinaje artístico</li>
+        </ul>
+
+        <div class="instructor-divider"></div>
+
+        <div class="name">Anikken Arentsen</div>
+        <p>Kinesióloga y posturóloga. Cofundadora y co-directora clínica de Clínica Sakros. Su ejercicio clínico y docente se centra en el desarrollo neuromotor, la integración de reflejos primitivos y la posturología clínica aplicada al pie como captor sensorial.</p>
+        <ul class="credentials">
+          <li>Kinesióloga</li>
+          <li>Posturóloga clínica</li>
+          <li>Cofundadora y co-directora, Clínica Sakros</li>
+          <li>Docencia en desarrollo neuromotor e integración de reflejos primitivos</li>
+          <li>Docencia en biomecánica del pie y captores posturales</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CURSOS ==================== -->
+<section class="cursos" id="cursos">
+  <div class="container">
+    <div class="cursos-header">
+      <div>
+        <div class="eyebrow">Programa <span class="accent">·</span> Tres formaciones</div>
+        <h2>Cada curso responde una pregunta clínica concreta.</h2>
+      </div>
+      <p class="intro">No son entrenamientos técnicos. Cada uno es un marco de razonamiento para escenarios frecuentes en consulta clínica: cefalea persistente, terapia manual en el deporte, dolor lumbar persistente, reflejos primitivos no integrados y biomecánica del pie desde la posturología.</p>
+    </div>
+
+    <!-- CURSO I -->
+    <article class="curso">
+      <div class="curso-numeral">I</div>
+      <div class="curso-meta">
+        <div class="tag">Terapia manual</div>
+        <dl>
+          <dt>Duración</dt>
+          <dd>[HORAS]</dd>
+          <dt>Modalidad</dt>
+          <dd>Presencial · Clínica Sakros, Viña del Mar</dd>
+          <dt>Dirigido a</dt>
+          <dd>Kinesiólogos y osteópatas en ejercicio</dd>
+          <dt>Fecha</dt>
+          <dd>[FECHA]</dd>
+        </dl>
+      </div>
+      <div class="curso-body">
+        <h3>Cefaleas persistentes y sensibilización del núcleo trigémino espinal</h3>
+        <p>Un marco de razonamiento clínico para diferenciar cefaleas cervicogénicas, migrañosas y tensionales sobre la base de la convergencia trigémino-cervical. El abordaje manual se elige a partir del razonamiento — no al revés.</p>
+        <div class="contenidos">
+          <div class="contenidos-label">Contenidos</div>
+          <ul>
+            <li>Núcleo trigémino espinal y convergencia C1–C3</li>
+            <li>Diagnóstico diferencial clínico</li>
+            <li>Banderas rojas y criterios de derivación</li>
+            <li>Abordaje manual craneal y cervical alto</li>
+            <li>Progresión y reevaluación</li>
+            <li>Educación al paciente sobre dolor persistente</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <!-- CURSO II -->
+    <article class="curso">
+      <div class="curso-numeral">II</div>
+      <div class="curso-meta">
+        <div class="tag">Rendimiento · Rehabilitación</div>
+        <dl>
+          <dt>Duración</dt>
+          <dd>[HORAS]</dd>
+          <dt>Modalidad</dt>
+          <dd>Presencial · Clínica Sakros, Viña del Mar</dd>
+          <dt>Dirigido a</dt>
+          <dd>Kinesiólogos deportivos y osteópatas</dd>
+          <dt>Fecha</dt>
+          <dd>[FECHA]</dd>
+        </dl>
+      </div>
+      <div class="curso-body">
+        <h3>Integración de técnicas manuales en el deporte — cuándo sí, cuándo no y qué hacer</h3>
+        <p>Cuándo la terapia manual suma, cuándo interfiere con la adaptación buscada, y cómo integrarla dentro de un ciclo de carga sin borrar la ganancia neuromuscular. Un criterio, no un listado de técnicas.</p>
+        <div class="contenidos">
+          <div class="contenidos-label">Contenidos</div>
+          <ul>
+            <li>Ventana terapéutica vs ventana de rendimiento</li>
+            <li>Efectos agudos sobre fuerza y propiocepción</li>
+            <li>Decisiones pre, intra y post competencia</li>
+            <li>Casos: recurrencias y retorno al deporte</li>
+            <li>Interacción con carga, sueño y recuperación</li>
+            <li>Criterios para no intervenir</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <!-- CURSO III -->
+    <article class="curso">
+      <div class="curso-numeral">III</div>
+      <div class="curso-meta">
+        <div class="tag">Dolor persistente · Control motor · HRV</div>
+        <dl>
+          <dt>Duración</dt>
+          <dd>14 horas</dd>
+          <dt>Modalidad</dt>
+          <dd>Presencial · Clínica Sakros, Viña del Mar</dd>
+          <dt>Dirigido a</dt>
+          <dd>Kinesiólogos y osteópatas</dd>
+          <dt>Fecha</dt>
+          <dd>[FECHA]</dd>
+        </dl>
+      </div>
+      <div class="curso-body">
+        <h3>Dolor lumbar persistente y diafragma — nexo entre control motor y HRV</h3>
+        <p>El diafragma como nexo entre las alteraciones del control motor lumbopélvico y la disregulación autónoma medida por HRV. Evaluación clínica del diafragma, tratamiento manual y progresiones de ejercicio con criterio.</p>
+        <div class="contenidos">
+          <div class="contenidos-label">Contenidos</div>
+          <ul>
+            <li>Diafragma: rol postural, respiratorio y autónomo</li>
+            <li>Evaluación palpatoria y funcional</li>
+            <li>Interpretación clínica de la HRV</li>
+            <li>Sensibilización central en dolor lumbar</li>
+            <li>Progresión de ejercicio: respiración, control motor, carga</li>
+            <li>Reevaluación con marcadores objetivos</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <!-- CURSO IV -->
+    <article class="curso">
+      <div class="curso-numeral">IV</div>
+      <div class="curso-meta">
+        <div class="tag">Desarrollo neuromotor · Integración</div>
+        <dl>
+          <dt>Duración</dt>
+          <dd>[HORAS]</dd>
+          <dt>Modalidad</dt>
+          <dd>Presencial · Clínica Sakros, Viña del Mar</dd>
+          <dt>Dirigido a</dt>
+          <dd>Kinesiólogos, fonoaudiólogos, terapeutas ocupacionales, psicopedagogos</dd>
+          <dt>Docente</dt>
+          <dd>Anikken Arentsen</dd>
+          <dt>Fecha</dt>
+          <dd>[FECHA]</dd>
+        </dl>
+      </div>
+      <div class="curso-body">
+        <h3>Reflejos primitivos y su integración</h3>
+        <p>Los reflejos primitivos son el andamiaje neurológico sobre el que se construyen la postura, el control motor voluntario, la regulación emocional y el aprendizaje. Cuando no se integran en los tiempos esperados, dejan huellas clínicas concretas en niños y adultos. Este curso enseña a identificarlos, evaluarlos y trabajar su integración desde una lógica de neurodesarrollo.</p>
+        <div class="contenidos">
+          <div class="contenidos-label">Contenidos</div>
+          <ul>
+            <li>Neurodesarrollo y jerarquía del SNC</li>
+            <li>Reflejos primitivos: aparición e integración esperada</li>
+            <li>Consecuencias clínicas de reflejos no integrados</li>
+            <li>Evaluación clínica en niños y adultos</li>
+            <li>Protocolos de integración: movimiento rítmico y estimulación</li>
+            <li>Impacto en postura, aprendizaje y regulación</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <!-- CURSO V -->
+    <article class="curso">
+      <div class="curso-numeral">V</div>
+      <div class="curso-meta">
+        <div class="tag">Posturología · Biomecánica</div>
+        <dl>
+          <dt>Duración</dt>
+          <dd>[HORAS]</dd>
+          <dt>Modalidad</dt>
+          <dd>Presencial · Clínica Sakros, Viña del Mar</dd>
+          <dt>Dirigido a</dt>
+          <dd>Kinesiólogos, osteópatas, podólogos</dd>
+          <dt>Docente</dt>
+          <dd>Anikken Arentsen</dd>
+          <dt>Fecha</dt>
+          <dd>[FECHA]</dd>
+        </dl>
+      </div>
+      <div class="curso-body">
+        <h3>Biomecánica del pie — evaluación y tratamiento desde la posturología</h3>
+        <p>El pie es el captor postural distal por excelencia. Su función biomecánica y su rol sensorial condicionan la organización global de la postura. Este curso integra evaluación biomecánica del pie, lectura desde la posturología clínica, técnicas manuales específicas y ejercicios de reeducación de captores posturales.</p>
+        <div class="contenidos">
+          <div class="contenidos-label">Contenidos</div>
+          <ul>
+            <li>Anatomía y biomecánica funcional del pie</li>
+            <li>El pie como captor postural</li>
+            <li>Otros captores: ojo, oído interno, ATM, piel</li>
+            <li>Evaluación clínica: huella, marcha, cadenas</li>
+            <li>Técnicas manuales sobre pie y captores</li>
+            <li>Ejercicios propioceptivos y de reeducación</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ==================== SAKROS FORMACIONES ==================== -->
+<section class="sakros-brand">
+  <div class="container">
+    <div>
+      <div class="eyebrow">El sello <span class="accent">·</span> Sakros Formaciones</div>
+      <h2>Formación clínica con <em>criterio,</em> no con recetas.</h2>
+    </div>
+    <div class="brand-body">
+      <p>Sakros Formaciones es la escuela de educación continua de Clínica Sakros. Cada programa se construye sobre evidencia estratificada — separando lo firme, lo mecanicista y lo debatido — y sobre un principio clínico simple: enseñar a decidir, no a repetir.</p>
+      <p>Los cursos se dictan en formato presencial con cupos limitados para asegurar trabajo práctico real, discusión de casos y contacto directo con el docente.</p>
+      <div class="principios">
+        <div>
+          <div class="principio-num">i.</div>
+          <div class="principio-text">Evidencia estratificada. Se distingue lo firme, lo mecanicista y lo debatido.</div>
+        </div>
+        <div>
+          <div class="principio-num">ii.</div>
+          <div class="principio-text">Razonamiento sobre protocolo. La técnica se elige, no se aplica por defecto.</div>
+        </div>
+        <div>
+          <div class="principio-num">iii.</div>
+          <div class="principio-text">Trabajo práctico real. Cupos acotados y casos clínicos discutidos en sala.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== INSCRIPCIÓN ==================== -->
+<section class="inscripcion" id="inscripcion">
+  <div class="container">
+    <div class="preventa-mark">Inscripciones abiertas</div>
+    <h2>Reserva tu <em>cupo.</em></h2>
+    <p class="lede">Los cupos son limitados para asegurar trabajo práctico real y discusión de casos. Escribe por WhatsApp para reservar cupo y recibir el programa detallado.</p>
+    <!-- REEMPLAZAR: número de WhatsApp real. Formato: 569XXXXXXXX -->
+    <a href="https://wa.me/569XXXXXXXX?text=Hola%20Juaco%2C%20quiero%20inscribirme%20a%20un%20curso%20de%20Sakros%20Formaciones" class="cta-primary">Escribir por WhatsApp</a>
+    <!-- REEMPLAZAR: URL del PDF del programa cuando esté subido -->
+    <a href="#" class="cta-secondary">Descargar programa (PDF)</a>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer>
+  <div class="container">
+    <div class="foot-brand">Sakros <em>Formaciones</em> · Joaquín Adi · Anikken Arentsen · Viña del Mar</div>
+    <div class="foot-meta">2026 · Todos los derechos reservados</div>
+  </div>
+</footer>
+
+</body>
+</html>
